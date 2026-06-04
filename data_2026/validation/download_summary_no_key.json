@@ -1,0 +1,16 @@
+{
+  "binance": [],
+  "coinmetrics": {
+    "rows": 3008,
+    "columns": [
+      "asset",
+      "date",
+      "PriceUSD"
+    ],
+    "first": "2018-01-01",
+    "last": "2026-03-27",
+    "missing": 0
+  },
+  "fred": [],
+  "fred_md": {}
+}

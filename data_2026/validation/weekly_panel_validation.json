@@ -1,0 +1,62 @@
+{
+  "daily_rows": 3008,
+  "daily_first": "2018-01-01",
+  "daily_last": "2026-03-27",
+  "weekly_rows": 430,
+  "weekly_first": "2018-01-05",
+  "weekly_last": "2026-03-27",
+  "columns": [
+    "BTCUSDT",
+    "BTC_COINMETRICS_USD",
+    "BIL",
+    "DBC",
+    "FBTC",
+    "GLD",
+    "IBIT",
+    "IEF",
+    "SHY",
+    "SPY",
+    "TLT"
+  ],
+  "weekly_missing_counts": {
+    "BTCUSDT": 0,
+    "BTC_COINMETRICS_USD": 0,
+    "BIL": 0,
+    "DBC": 0,
+    "FBTC": 314,
+    "GLD": 0,
+    "IBIT": 314,
+    "IEF": 0,
+    "SHY": 0,
+    "SPY": 0,
+    "TLT": 0
+  },
+  "weekly_return_missing_counts": {
+    "BTCUSDT": 1,
+    "BTC_COINMETRICS_USD": 1,
+    "BIL": 1,
+    "DBC": 1,
+    "FBTC": 315,
+    "GLD": 1,
+    "IBIT": 315,
+    "IEF": 1,
+    "SHY": 1,
+    "SPY": 1,
+    "TLT": 1
+  },
+  "main_common_weekly": {
+    "columns": [
+      "BTCUSDT",
+      "SPY",
+      "TLT",
+      "IEF",
+      "GLD",
+      "DBC",
+      "BIL",
+      "SHY"
+    ],
+    "rows": 430,
+    "first": "2018-01-05",
+    "last": "2026-03-27"
+  }
+}

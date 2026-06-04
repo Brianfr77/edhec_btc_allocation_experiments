@@ -1,0 +1,165 @@
+{
+  "btc_cross_validation": {
+    "daily_overlap_rows": 3008,
+    "daily_first": "2018-01-01",
+    "daily_last": "2026-03-27",
+    "daily_return_corr": 0.9906897058389622,
+    "daily_abs_ret_diff_p99": 0.017727046678936487,
+    "daily_abs_ret_diff_max": 0.06184356936180624,
+    "weekly_rows": 429,
+    "weekly_return_corr": 0.9985703077233321,
+    "weekly_abs_ret_diff_p99": 0.01791437259235041,
+    "weekly_abs_ret_diff_max": 0.036963690291060725,
+    "weekly_largest_abs_diffs": [
+      {
+        "date": "2019-04-26",
+        "binance_ret": 0.010538766382438114,
+        "coinmetrics_ret": -0.02642492390862261,
+        "diff": 0.036963690291060725
+      },
+      {
+        "date": "2018-03-23",
+        "binance_ret": 0.07724334140435851,
+        "coinmetrics_ret": 0.04713457403400434,
+        "diff": 0.030108767370354172
+      },
+      {
+        "date": "2020-03-27",
+        "binance_ret": 0.024281774897074282,
+        "coinmetrics_ret": 0.05128575850195882,
+        "diff": -0.02700398360488454
+      },
+      {
+        "date": "2019-05-10",
+        "binance_ret": 0.10404854582525647,
+        "coinmetrics_ret": 0.12353834141681008,
+        "diff": -0.019489795591553616
+      },
+      {
+        "date": "2020-04-03",
+        "binance_ret": 0.05896894376728823,
+        "coinmetrics_ret": 0.04022729420155313,
+        "diff": 0.018741649565735097
+      }
+    ]
+  },
+  "etf_validation": [
+    {
+      "ticker": "BIL",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.0007650273224042436,
+      "largest_abs_daily_return_date": "2023-01-12",
+      "dividend_rows": 76,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "DBC",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.07944424652654081,
+      "largest_abs_daily_return_date": "2022-03-09",
+      "dividend_rows": 6,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "FBTC",
+      "rows": 554,
+      "first": "2024-01-11",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.14411119239209957,
+      "largest_abs_daily_return_date": "2024-08-05",
+      "dividend_rows": 0,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "GLD",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.10274248840492028,
+      "largest_abs_daily_return_date": "2026-01-30",
+      "dividend_rows": 0,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "IBIT",
+      "rows": 554,
+      "first": "2024-01-11",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.1440606571187868,
+      "largest_abs_daily_return_date": "2024-08-05",
+      "dividend_rows": 0,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "IEF",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.02641670217298686,
+      "largest_abs_daily_return_date": "2020-03-16",
+      "dividend_rows": 98,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "SHY",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.009974141115626,
+      "largest_abs_daily_return_date": "2023-03-13",
+      "dividend_rows": 98,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "SPY",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.10942373384821058,
+      "largest_abs_daily_return_date": "2020-03-16",
+      "dividend_rows": 33,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "TLT",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates": 0,
+      "largest_abs_daily_return": 0.07519557593741566,
+      "largest_abs_daily_return_date": "2020-03-20",
+      "dividend_rows": 98,
+      "split_rows_non1": 0
+    }
+  ]
+}

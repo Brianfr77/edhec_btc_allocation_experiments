@@ -1,0 +1,763 @@
+{
+  "created_at": "2026-06-03T10:34:43.994759",
+  "input_file": "data_2026/processed/weekly_asset_macro_panel.csv",
+  "output_files": {
+    "asset_returns_main_weekly": "data_2026/cleaned/asset_returns_main_weekly.csv",
+    "state_model_panel_weekly": "data_2026/cleaned/state_model_panel_weekly.csv",
+    "robustness_weekly_panel": "data_2026/cleaned/robustness_weekly_panel.csv",
+    "cleaning_report": "data_2026/cleaned/cleaning_report.json"
+  },
+  "sample": {
+    "main_asset_start": "2018-01-12",
+    "main_asset_end": "2026-03-27",
+    "main_asset_rows": 429,
+    "state_model_start": "2018-02-09",
+    "state_model_end": "2026-03-27",
+    "state_model_rows": 425,
+    "robustness_start": "2018-01-05",
+    "robustness_end": "2026-03-27",
+    "robustness_rows": 430
+  },
+  "rules": {
+    "frequency": "weekly Friday close / week-ending Friday",
+    "returns": "simple returns only in main panel",
+    "macro_timing": "only one-week-lagged macro predictors in state model panel",
+    "standardization": "full-sample population z-score on complete state-model sample",
+    "winsorization": "none; extreme values are audited only",
+    "gld_policy": "GLD retained unchanged; user confirmed GLD data are usable."
+  },
+  "column_mapping": {
+    "main_assets": {
+      "RET_BTCUSDT": "ret_btc",
+      "RET_SPY": "ret_spy",
+      "RET_TLT": "ret_tlt",
+      "RET_IEF": "ret_ief",
+      "RET_GLD": "ret_gld",
+      "RET_DBC": "ret_dbc",
+      "RET_BIL": "ret_bil"
+    },
+    "state_predictors": {
+      "MACRO_LAG1_NET_LIQUIDITY_CHG_4W": "macro_net_liquidity_chg_4w",
+      "MACRO_LAG1_DFII10": "macro_real_yield_10y",
+      "MACRO_LAG1_DFII10_CHG_4W": "macro_real_yield_10y_chg_4w",
+      "MACRO_LAG1_T10YIE": "macro_breakeven_10y",
+      "MACRO_LAG1_T10YIE_CHG_4W": "macro_breakeven_10y_chg_4w",
+      "MACRO_LAG1_VIXCLS": "macro_vix",
+      "MACRO_LAG1_BAA10Y": "macro_credit_spread_baa10y",
+      "MACRO_LAG1_ANFCI": "macro_adjusted_financial_conditions",
+      "MACRO_LAG1_DTWEXBGS_CHG_4W": "macro_dollar_chg_4w",
+      "MACRO_LAG1_YIELD_CURVE_10Y_2Y": "macro_yield_curve_10y_2y"
+    },
+    "robustness": {
+      "RET_BTCUSDT": "ret_btc",
+      "RET_BTC_COINMETRICS_USD": "ret_btc_coinmetrics_usd",
+      "RET_SHY": "ret_shy",
+      "PX_IBIT": "px_ibit",
+      "RET_IBIT": "ret_ibit",
+      "PX_FBTC": "px_fbtc",
+      "RET_FBTC": "ret_fbtc",
+      "MACRO_LAG1_BAMLH0A0HYM2": "macro_hy_oas_lag1",
+      "MACRO_LAG1_BAMLH0A0HYM2_CHG_1W": "macro_hy_oas_chg_1w_lag1",
+      "MACRO_LAG1_BAMLH0A0HYM2_CHG_4W": "macro_hy_oas_chg_4w_lag1"
+    }
+  },
+  "excluded_from_main": {
+    "BTC_COINMETRICS_USD": "validation/robustness source for BTCUSDT, not main BTC series",
+    "SHY": "short-duration Treasury robustness proxy; BIL is main cash/short-bill proxy",
+    "IBIT": "ETF implementation observation only; starts in 2024",
+    "FBTC": "ETF implementation observation only; starts in 2024",
+    "BAMLH0A0HYM2": "FRED current API starts 2023-06-02; BAA10Y is main full-sample credit-spread proxy"
+  },
+  "missing_values": {
+    "asset_returns_main_weekly": {
+      "ret_btc": 0,
+      "ret_spy": 0,
+      "ret_tlt": 0,
+      "ret_ief": 0,
+      "ret_gld": 0,
+      "ret_dbc": 0,
+      "ret_bil": 0
+    },
+    "state_model_panel_weekly": {
+      "ret_btc": 0,
+      "ret_spy": 0,
+      "ret_tlt": 0,
+      "ret_ief": 0,
+      "ret_gld": 0,
+      "ret_dbc": 0,
+      "ret_bil": 0,
+      "macro_net_liquidity_chg_4w": 0,
+      "macro_real_yield_10y": 0,
+      "macro_real_yield_10y_chg_4w": 0,
+      "macro_breakeven_10y": 0,
+      "macro_breakeven_10y_chg_4w": 0,
+      "macro_vix": 0,
+      "macro_credit_spread_baa10y": 0,
+      "macro_adjusted_financial_conditions": 0,
+      "macro_dollar_chg_4w": 0,
+      "macro_yield_curve_10y_2y": 0,
+      "macro_net_liquidity_chg_4w_z": 0,
+      "macro_real_yield_10y_z": 0,
+      "macro_real_yield_10y_chg_4w_z": 0,
+      "macro_breakeven_10y_z": 0,
+      "macro_breakeven_10y_chg_4w_z": 0,
+      "macro_vix_z": 0,
+      "macro_credit_spread_baa10y_z": 0,
+      "macro_adjusted_financial_conditions_z": 0,
+      "macro_dollar_chg_4w_z": 0,
+      "macro_yield_curve_10y_2y_z": 0
+    },
+    "robustness_weekly_panel": {
+      "ret_btc": 1,
+      "ret_btc_coinmetrics_usd": 1,
+      "ret_shy": 1,
+      "px_ibit": 314,
+      "ret_ibit": 315,
+      "px_fbtc": 314,
+      "ret_fbtc": 315,
+      "macro_hy_oas_lag1": 283,
+      "macro_hy_oas_chg_1w_lag1": 284,
+      "macro_hy_oas_chg_4w_lag1": 287,
+      "ret_btc_minus_coinmetrics": 1
+    },
+    "structural_missing_robustness": {
+      "ret_btc": {
+        "missing": 1,
+        "first_valid": "2018-01-12",
+        "last_valid": "2026-03-27"
+      },
+      "ret_btc_coinmetrics_usd": {
+        "missing": 1,
+        "first_valid": "2018-01-12",
+        "last_valid": "2026-03-27"
+      },
+      "ret_shy": {
+        "missing": 1,
+        "first_valid": "2018-01-12",
+        "last_valid": "2026-03-27"
+      },
+      "px_ibit": {
+        "missing": 314,
+        "first_valid": "2024-01-12",
+        "last_valid": "2026-03-27"
+      },
+      "ret_ibit": {
+        "missing": 315,
+        "first_valid": "2024-01-19",
+        "last_valid": "2026-03-27"
+      },
+      "px_fbtc": {
+        "missing": 314,
+        "first_valid": "2024-01-12",
+        "last_valid": "2026-03-27"
+      },
+      "ret_fbtc": {
+        "missing": 315,
+        "first_valid": "2024-01-19",
+        "last_valid": "2026-03-27"
+      },
+      "macro_hy_oas_lag1": {
+        "missing": 283,
+        "first_valid": "2023-06-09",
+        "last_valid": "2026-03-27"
+      },
+      "macro_hy_oas_chg_1w_lag1": {
+        "missing": 284,
+        "first_valid": "2023-06-16",
+        "last_valid": "2026-03-27"
+      },
+      "macro_hy_oas_chg_4w_lag1": {
+        "missing": 287,
+        "first_valid": "2023-07-07",
+        "last_valid": "2026-03-27"
+      },
+      "ret_btc_minus_coinmetrics": {
+        "missing": 1,
+        "first_valid": "2018-01-12",
+        "last_valid": "2026-03-27"
+      }
+    }
+  },
+  "consistency_checks": {
+    "ret_btc": {
+      "source_column": "RET_BTCUSDT",
+      "max_abs_diff": 0.0,
+      "matches_source": true
+    },
+    "ret_spy": {
+      "source_column": "RET_SPY",
+      "max_abs_diff": 0.0,
+      "matches_source": true
+    },
+    "ret_tlt": {
+      "source_column": "RET_TLT",
+      "max_abs_diff": 0.0,
+      "matches_source": true
+    },
+    "ret_ief": {
+      "source_column": "RET_IEF",
+      "max_abs_diff": 0.0,
+      "matches_source": true
+    },
+    "ret_gld": {
+      "source_column": "RET_GLD",
+      "max_abs_diff": 0.0,
+      "matches_source": true
+    },
+    "ret_dbc": {
+      "source_column": "RET_DBC",
+      "max_abs_diff": 0.0,
+      "matches_source": true
+    },
+    "ret_bil": {
+      "source_column": "RET_BIL",
+      "max_abs_diff": 0.0,
+      "matches_source": true
+    }
+  },
+  "zscore_checks": {
+    "macro_net_liquidity_chg_4w_z": {
+      "mean": 3.3437305212240006e-17,
+      "std_population": 1.0,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_real_yield_10y_z": {
+      "mean": 6.687461042448001e-17,
+      "std_population": 1.0,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_real_yield_10y_chg_4w_z": {
+      "mean": 0.0,
+      "std_population": 0.9999999999999999,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_breakeven_10y_z": {
+      "mean": 8.693699355182403e-16,
+      "std_population": 0.9999999999999999,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_breakeven_10y_chg_4w_z": {
+      "mean": -2.0898315757650005e-17,
+      "std_population": 1.0,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_vix_z": {
+      "mean": 3.3437305212240006e-17,
+      "std_population": 1.0,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_credit_spread_baa10y_z": {
+      "mean": 2.0062383127344006e-16,
+      "std_population": 0.9999999999999999,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_adjusted_financial_conditions_z": {
+      "mean": -2.6749844169792005e-16,
+      "std_population": 0.9999999999999999,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_dollar_chg_4w_z": {
+      "mean": 2.0898315757650005e-17,
+      "std_population": 1.0,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    },
+    "macro_yield_curve_10y_2y_z": {
+      "mean": 0.0,
+      "std_population": 0.9999999999999999,
+      "mean_close_to_zero": true,
+      "std_close_to_one": true
+    }
+  },
+  "zscore_parameters": {
+    "macro_net_liquidity_chg_4w": {
+      "mean_used": 14843.439854117649,
+      "std_population_used": 215835.81982951355,
+      "z_mean_after": 3.3437305212240006e-17,
+      "z_std_population_after": 1.0,
+      "z_max_abs": 6.622998788037195,
+      "z_max_abs_date": "2020-04-10"
+    },
+    "macro_real_yield_10y": {
+      "mean_used": 0.7482588235294118,
+      "std_population_used": 1.1083067228136396,
+      "z_mean_after": 6.687461042448001e-17,
+      "z_std_population_after": 1.0,
+      "z_max_abs": 1.721778623416582,
+      "z_max_abs_date": "2021-08-06"
+    },
+    "macro_real_yield_10y_chg_4w": {
+      "mean_used": 0.012470588235294117,
+      "std_population_used": 0.21035044083261986,
+      "z_mean_after": 0.0,
+      "z_std_population_after": 0.9999999999999999,
+      "z_max_abs": 4.456988100684406,
+      "z_max_abs_date": "2022-10-07"
+    },
+    "macro_breakeven_10y": {
+      "mean_used": 2.139576470588235,
+      "std_population_used": 0.35980754255804714,
+      "z_mean_after": 8.693699355182403e-16,
+      "z_std_population_after": 0.9999999999999999,
+      "z_max_abs": 3.8619992808073413,
+      "z_max_abs_date": "2020-03-27"
+    },
+    "macro_breakeven_10y_chg_4w": {
+      "mean_used": 0.002752941176470587,
+      "std_population_used": 0.13779848081484383,
+      "z_mean_after": -2.0898315757650005e-17,
+      "z_std_population_after": 1.0,
+      "z_max_abs": 6.260975709418227,
+      "z_max_abs_date": "2020-03-27"
+    },
+    "macro_vix": {
+      "mean_used": 19.575529411764705,
+      "std_population_used": 7.166148412687555,
+      "z_mean_after": 3.3437305212240006e-17,
+      "z_std_population_after": 1.0,
+      "z_max_abs": 6.48388337952514,
+      "z_max_abs_date": "2020-03-27"
+    },
+    "macro_credit_spread_baa10y": {
+      "mean_used": 2.003529411764706,
+      "std_population_used": 0.4032039503843388,
+      "z_mean_after": 2.0062383127344006e-16,
+      "z_std_population_after": 0.9999999999999999,
+      "z_max_abs": 5.521946365141007,
+      "z_max_abs_date": "2020-03-27"
+    },
+    "macro_adjusted_financial_conditions": {
+      "mean_used": -0.4429317647058823,
+      "std_population_used": 0.1906906149711157,
+      "z_mean_after": -2.6749844169792005e-16,
+      "z_std_population_after": 0.9999999999999999,
+      "z_max_abs": 4.761281853558491,
+      "z_max_abs_date": "2020-04-10"
+    },
+    "macro_dollar_chg_4w": {
+      "mean_used": 0.10647905882352943,
+      "std_population_used": 1.6881569818303754,
+      "z_mean_after": 2.0898315757650005e-17,
+      "z_std_population_after": 1.0,
+      "z_max_abs": 4.610010221169368,
+      "z_max_abs_date": "2020-03-27"
+    },
+    "macro_yield_curve_10y_2y": {
+      "mean_used": 0.24268235294117646,
+      "std_population_used": 0.5513319532094597,
+      "z_mean_after": 0.0,
+      "z_std_population_after": 0.9999999999999999,
+      "z_max_abs": 2.4256124450504237,
+      "z_max_abs_date": "2021-03-26"
+    }
+  },
+  "audit": {
+    "asset_returns": {
+      "ret_btc": {
+        "count": 429,
+        "missing": 0,
+        "min": -0.38910717179814,
+        "max": 0.3835823984230024,
+        "mean": 0.0071150910645468475,
+        "std_population": 0.08833898808891319,
+        "max_abs": 0.38910717179814,
+        "max_abs_date": "2020-03-13"
+      },
+      "ret_spy": {
+        "count": 429,
+        "missing": 0,
+        "min": -0.1452340747066686,
+        "max": 0.1209154276965227,
+        "mean": 0.0025881652524145497,
+        "std_population": 0.025403617116691448,
+        "max_abs": 0.1452340747066686,
+        "max_abs_date": "2020-03-20"
+      },
+      "ret_tlt": {
+        "count": 429,
+        "missing": 0,
+        "min": -0.076932301972777,
+        "max": 0.0753869550057371,
+        "mean": -0.00015820018545115904,
+        "std_population": 0.02018514272927837,
+        "max_abs": 0.076932301972777,
+        "max_abs_date": "2020-03-13"
+      },
+      "ret_ief": {
+        "count": 429,
+        "missing": 0,
+        "min": -0.0315865782932892,
+        "max": 0.0311923301467635,
+        "mean": 0.00023972162118473064,
+        "std_population": 0.009205178778335656,
+        "max_abs": 0.0315865782932892,
+        "max_abs_date": "2025-04-11"
+      },
+      "ret_gld": {
+        "count": 429,
+        "missing": 0,
+        "min": -0.1029858519225761,
+        "max": 0.0871371264449665,
+        "mean": 0.0030196024931973572,
+        "std_population": 0.021280896756148093,
+        "max_abs": 0.1029858519225761,
+        "max_abs_date": "2026-03-20"
+      },
+      "ret_dbc": {
+        "count": 429,
+        "missing": 0,
+        "min": -0.0966143682906687,
+        "max": 0.1508308478909246,
+        "mean": 0.0020131878848364338,
+        "std_population": 0.0256876643381582,
+        "max_abs": 0.1508308478909246,
+        "max_abs_date": "2022-03-04"
+      },
+      "ret_bil": {
+        "count": 429,
+        "missing": 0,
+        "min": -0.0004363953742089,
+        "max": 0.0015287180607119,
+        "mean": 0.00047046561473637003,
+        "std_population": 0.00039950165754213703,
+        "max_abs": 0.0015287180607119,
+        "max_abs_date": "2023-03-17"
+      }
+    },
+    "state_predictors_raw": {
+      "macro_net_liquidity_chg_4w": {
+        "count": 425,
+        "missing": 0,
+        "min": -473690.2209999999,
+        "max": 1444323.8130000003,
+        "mean": 14843.439854117649,
+        "std_population": 215835.81982951355,
+        "max_abs": 1444323.8130000003,
+        "max_abs_date": "2020-04-10"
+      },
+      "macro_real_yield_10y": {
+        "count": 425,
+        "missing": 0,
+        "min": -1.16,
+        "max": 2.47,
+        "mean": 0.7482588235294118,
+        "std_population": 1.1083067228136396,
+        "max_abs": 2.47,
+        "max_abs_date": "2023-10-13"
+      },
+      "macro_real_yield_10y_chg_4w": {
+        "count": 425,
+        "missing": 0,
+        "min": -0.6099999999999999,
+        "max": 0.95,
+        "mean": 0.012470588235294117,
+        "std_population": 0.21035044083261986,
+        "max_abs": 0.95,
+        "max_abs_date": "2022-10-07"
+      },
+      "macro_breakeven_10y": {
+        "count": 425,
+        "missing": 0,
+        "min": 0.75,
+        "max": 2.98,
+        "mean": 2.139576470588235,
+        "std_population": 0.35980754255804714,
+        "max_abs": 2.98,
+        "max_abs_date": "2022-04-29"
+      },
+      "macro_breakeven_10y_chg_4w": {
+        "count": 425,
+        "missing": 0,
+        "min": -0.8600000000000001,
+        "max": 0.5099999999999998,
+        "mean": 0.002752941176470587,
+        "std_population": 0.13779848081484383,
+        "max_abs": 0.8600000000000001,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_vix": {
+        "count": 425,
+        "missing": 0,
+        "min": 11.64,
+        "max": 66.04,
+        "mean": 19.575529411764705,
+        "std_population": 7.166148412687555,
+        "max_abs": 66.04,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_credit_spread_baa10y": {
+        "count": 425,
+        "missing": 0,
+        "min": 1.38,
+        "max": 4.23,
+        "mean": 2.003529411764706,
+        "std_population": 0.4032039503843388,
+        "max_abs": 4.23,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_adjusted_financial_conditions": {
+        "count": 425,
+        "missing": 0,
+        "min": -0.71,
+        "max": 0.465,
+        "mean": -0.4429317647058823,
+        "std_population": 0.1906906149711157,
+        "max_abs": 0.71,
+        "max_abs_date": "2021-09-24"
+      },
+      "macro_dollar_chg_4w": {
+        "count": 425,
+        "missing": 0,
+        "min": -5.136600000000001,
+        "max": 7.888899999999992,
+        "mean": 0.10647905882352943,
+        "std_population": 1.6881569818303754,
+        "max_abs": 7.888899999999992,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_yield_curve_10y_2y": {
+        "count": 425,
+        "missing": 0,
+        "min": -1.06,
+        "max": 1.58,
+        "mean": 0.24268235294117646,
+        "std_population": 0.5513319532094597,
+        "max_abs": 1.58,
+        "max_abs_date": "2021-03-26"
+      }
+    },
+    "state_predictors_zscore": {
+      "macro_net_liquidity_chg_4w_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -2.2634503449890992,
+        "max": 6.622998788037195,
+        "mean": 3.3437305212240006e-17,
+        "std_population": 1.0,
+        "max_abs": 6.622998788037195,
+        "max_abs_date": "2020-04-10"
+      },
+      "macro_real_yield_10y_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -1.721778623416582,
+        "max": 1.5534879839938471,
+        "mean": 6.687461042448001e-17,
+        "std_population": 1.0,
+        "max_abs": 1.721778623416582,
+        "max_abs_date": "2021-08-06"
+      },
+      "macro_real_yield_10y_chg_4w_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -2.959207433896497,
+        "max": 4.456988100684406,
+        "mean": 0.0,
+        "std_population": 0.9999999999999999,
+        "max_abs": 4.456988100684406,
+        "max_abs_date": "2022-10-07"
+      },
+      "macro_breakeven_10y_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -3.8619992808073413,
+        "max": 2.3357585097766007,
+        "mean": 8.693699355182403e-16,
+        "std_population": 0.9999999999999999,
+        "max_abs": 3.8619992808073413,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_breakeven_10y_chg_4w_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -6.260975709418227,
+        "max": 3.681078745019719,
+        "mean": -2.0898315757650005e-17,
+        "std_population": 1.0,
+        "max_abs": 6.260975709418227,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_vix_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -1.1073632521641574,
+        "max": 6.48388337952514,
+        "mean": 3.3437305212240006e-17,
+        "std_population": 1.0,
+        "max_abs": 6.48388337952514,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_credit_spread_baa10y_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -1.5464367627607571,
+        "max": 5.521946365141007,
+        "mean": 2.0062383127344006e-16,
+        "std_population": 0.9999999999999999,
+        "max_abs": 5.521946365141007,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_adjusted_financial_conditions_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -1.400531616800182,
+        "max": 4.761281853558491,
+        "mean": -2.6749844169792005e-16,
+        "std_population": 0.9999999999999999,
+        "max_abs": 4.761281853558491,
+        "max_abs_date": "2020-04-10"
+      },
+      "macro_dollar_chg_4w_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -3.1058006543554675,
+        "max": 4.610010221169368,
+        "mean": 2.0898315757650005e-17,
+        "std_population": 1.0,
+        "max_abs": 4.610010221169368,
+        "max_abs_date": "2020-03-27"
+      },
+      "macro_yield_curve_10y_2y_z": {
+        "count": 425,
+        "missing": 0,
+        "min": -2.3627913190191374,
+        "max": 2.4256124450504237,
+        "mean": 0.0,
+        "std_population": 0.9999999999999999,
+        "max_abs": 2.4256124450504237,
+        "max_abs_date": "2021-03-26"
+      }
+    },
+    "robustness": {
+      "ret_btc": {
+        "count": 429,
+        "missing": 1,
+        "min": -0.38910717179814,
+        "max": 0.3835823984230024,
+        "mean": 0.0071150910645468475,
+        "std_population": 0.08833898808891319,
+        "max_abs": 0.38910717179814,
+        "max_abs_date": "2020-03-13"
+      },
+      "ret_btc_coinmetrics_usd": {
+        "count": 429,
+        "missing": 1,
+        "min": -0.3847556514356667,
+        "max": 0.3878298767979502,
+        "mean": 0.007108967123624398,
+        "std_population": 0.08847263899438769,
+        "max_abs": 0.3878298767979502,
+        "max_abs_date": "2021-01-08"
+      },
+      "ret_shy": {
+        "count": 429,
+        "missing": 1,
+        "min": -0.0068575553416747,
+        "max": 0.0130525797315601,
+        "mean": 0.0003748884624595107,
+        "std_population": 0.002170350468026266,
+        "max_abs": 0.0130525797315601,
+        "max_abs_date": "2023-03-17"
+      },
+      "px_ibit": {
+        "count": 116,
+        "missing": 314,
+        "min": 23.8,
+        "max": 69.81,
+        "mean": 47.39159482758621,
+        "std_population": 11.942996984944234,
+        "max_abs": 69.81,
+        "max_abs_date": "2025-10-03"
+      },
+      "ret_ibit": {
+        "count": 115,
+        "missing": 315,
+        "min": -0.1644556748789218,
+        "max": 0.2342249657064472,
+        "mean": 0.0054877479391356055,
+        "std_population": 0.06365950691755833,
+        "max_abs": 0.2342249657064472,
+        "max_abs_date": "2024-03-01"
+      },
+      "px_fbtc": {
+        "count": 116,
+        "missing": 314,
+        "min": 36.49,
+        "max": 107.17,
+        "mean": 72.78771551724138,
+        "std_population": 18.35902522100837,
+        "max_abs": 107.17,
+        "max_abs_date": "2025-10-03"
+      },
+      "ret_fbtc": {
+        "count": 115,
+        "missing": 315,
+        "min": -0.1651602300739523,
+        "max": 0.2332960893854747,
+        "mean": 0.005484940820754946,
+        "std_population": 0.06352542535824826,
+        "max_abs": 0.2332960893854747,
+        "max_abs_date": "2024-03-01"
+      },
+      "macro_hy_oas_lag1": {
+        "count": 147,
+        "missing": 283,
+        "min": 2.6,
+        "max": 4.53,
+        "mean": 3.2754421768707482,
+        "std_population": 0.4844805497840659,
+        "max_abs": 4.53,
+        "max_abs_date": "2023-11-03"
+      },
+      "macro_hy_oas_chg_1w_lag1": {
+        "count": 146,
+        "missing": 284,
+        "min": -0.4900000000000002,
+        "max": 0.98,
+        "mean": -0.007739726027397244,
+        "std_population": 0.17424502723961208,
+        "max_abs": 0.98,
+        "max_abs_date": "2025-04-11"
+      },
+      "macro_hy_oas_chg_4w_lag1": {
+        "count": 143,
+        "missing": 287,
+        "min": -0.8599999999999994,
+        "max": 1.48,
+        "mean": -0.031188811188811196,
+        "std_population": 0.32391937508141144,
+        "max_abs": 1.48,
+        "max_abs_date": "2025-04-11"
+      },
+      "ret_btc_minus_coinmetrics": {
+        "count": 429,
+        "missing": 1,
+        "min": -0.027003983604884603,
+        "max": 0.0369636902910607,
+        "mean": 6.1239409224499896e-06,
+        "std_population": 0.004729230489246277,
+        "max_abs": 0.0369636902910607,
+        "max_abs_date": "2019-04-26"
+      }
+    }
+  },
+  "tests": {
+    "asset_dates_all_friday": true,
+    "state_dates_all_friday": true,
+    "asset_returns_range_exact": true,
+    "asset_returns_no_missing": true,
+    "state_predictors_no_missing": true,
+    "asset_returns_match_source": true,
+    "zscore_means_close_to_zero": true,
+    "zscore_population_stds_close_to_one": true
+  },
+  "tests_passed": true
+}

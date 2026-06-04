@@ -1,0 +1,26 @@
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.env
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+
+# Local project materials not included in this reproducibility repository
+literature/
+paper/
+reports/
+
+# Outputs: keep only the compressed reproducibility bundles
+outputs/*
+!outputs/
+!outputs/*_outputs.zip

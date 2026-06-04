@@ -1,0 +1,95 @@
+{
+  "results": [
+    {
+      "ticker": "SPY",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.0,
+      "max_close_diff_date": "2026-03-20"
+    },
+    {
+      "ticker": "TLT",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0049999999999954525,
+      "max_adj_abs_diff": 0.003225216020197763,
+      "max_close_diff_date": "2026-03-23"
+    },
+    {
+      "ticker": "IEF",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.3198814114899591,
+      "max_close_diff_date": "2026-03-20"
+    },
+    {
+      "ticker": "GLD",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.0,
+      "max_close_diff_date": "2026-03-20"
+    },
+    {
+      "ticker": "DBC",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.0,
+      "max_close_diff_date": "2026-03-20"
+    },
+    {
+      "ticker": "BIL",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.2700995384889211,
+      "max_close_diff_date": "2026-03-20"
+    },
+    {
+      "ticker": "SHY",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.24045344866463836,
+      "max_close_diff_date": "2026-03-20"
+    },
+    {
+      "ticker": "IBIT",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.0,
+      "max_close_diff_date": "2026-03-20"
+    },
+    {
+      "ticker": "FBTC",
+      "stockanalysis_rows_parsed": 50,
+      "overlap_rows": 6,
+      "overlap_first": "2026-03-20",
+      "overlap_last": "2026-03-27",
+      "max_close_abs_diff": 0.0,
+      "max_adj_abs_diff": 0.0,
+      "max_close_diff_date": "2026-03-20"
+    }
+  ],
+  "errors": []
+}

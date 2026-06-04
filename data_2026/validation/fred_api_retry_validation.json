@@ -1,0 +1,61 @@
+{
+  "summary": [
+    {
+      "series": "T5YIE",
+      "rows": 2150,
+      "non_null": 2058,
+      "missing": 92,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "T10YIE",
+      "rows": 2150,
+      "non_null": 2058,
+      "missing": 92,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "NFCI",
+      "rows": 430,
+      "non_null": 430,
+      "missing": 0,
+      "first": "2018-01-05",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "ANFCI",
+      "rows": 430,
+      "non_null": 430,
+      "missing": 0,
+      "first": "2018-01-05",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "CPILFESL",
+      "rows": 99,
+      "non_null": 98,
+      "missing": 1,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "INDPRO",
+      "rows": 99,
+      "non_null": 99,
+      "missing": 0,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "USREC",
+      "rows": 99,
+      "non_null": 99,
+      "missing": 0,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    }
+  ],
+  "errors": []
+}

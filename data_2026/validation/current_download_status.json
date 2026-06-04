@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-06-02",
+  "sample_end": "2026-03-27",
+  "completed": {
+    "binance_btcusdt_spot": {
+      "processed": "processed/btc_binance_btcusdt_daily.csv",
+      "validation": "validation/binance_btcusdt_validation.json",
+      "status": "complete; 3008 daily rows, 2018-01-01 to 2026-03-27, no missing days, no duplicate dates, checksum failures 0"
+    },
+    "coinmetrics_btc_priceusd": {
+      "processed": "processed/btc_coinmetrics_priceusd_daily.csv",
+      "validation": "validation/cross_source_validation.json",
+      "status": "complete; 3008 daily rows; weekly return correlation with Binance BTCUSDT 0.99857"
+    },
+    "tiingo_etfs": {
+      "tickers": [
+        "SPY",
+        "TLT",
+        "IEF",
+        "GLD",
+        "DBC",
+        "BIL",
+        "SHY",
+        "IBIT",
+        "FBTC"
+      ],
+      "processed": "processed/etf_tiingo_daily_combined.csv plus per-ticker files",
+      "validation": [
+        "validation/tiingo_etf_download_validation.json",
+        "validation/cross_source_validation.json",
+        "validation/stockanalysis_recent_crosscheck.json"
+      ],
+      "status": "complete; all tickers aligned to SPY calendar within overlap; no missing adjClose, duplicate dates, or nonpositive prices"
+    },
+    "fred_hand_selected_macro": {
+      "series": [
+        "WALCL",
+        "WDTGAL",
+        "RRPONTSYD",
+        "WRESBAL",
+        "DGS2",
+        "DGS10",
+        "DFII5",
+        "DFII10",
+        "T5YIE",
+        "T10YIE",
+        "VIXCLS",
+        "BAMLH0A0HYM2",
+        "BAA10Y",
+        "NFCI",
+        "ANFCI",
+        "DTWEXBGS",
+        "CPIAUCSL",
+        "CPILFESL",
+        "INDPRO",
+        "UNRATE",
+        "CFNAI",
+        "USREC"
+      ],
+      "processed": [
+        "processed/fred_macro_panel_raw_frequency.csv",
+        "processed/fred_macro_weekly_levels_features.csv",
+        "processed/fred_macro_weekly_predictors_lag1.csv"
+      ],
+      "validation": [
+        "validation/fred_api_download_validation.json",
+        "validation/fred_api_retry_validation.json",
+        "validation/fred_weekly_panel_validation.json"
+      ],
+      "status": "complete for hand-selected macro panel; BAMLH0A0HYM2 begins 2023-06-02 under current FRED API, so BAA10Y was added as full-sample credit-spread proxy"
+    },
+    "weekly_asset_macro_panel": {
+      "processed": "processed/weekly_asset_macro_panel.csv",
+      "validation": "validation/weekly_asset_macro_panel_validation.json",
+      "status": "complete; 430 weekly rows from 2018-01-05 to 2026-03-27; main returns plus lagged macro predictors complete from 2018-01-12 to 2026-03-27, 429 rows"
+    }
+  },
+  "optional_pending": {
+    "fred_md": {
+      "reason": "FRED-MD static download paths returned 403 or timed out from this machine. The hand-selected FRED panel is complete and can serve as the main macro-state dataset.",
+      "next_if_needed": "manual download from the official FRED-MD page or retry static path later for high-dimensional ML extension"
+    }
+  },
+  "watchlist": {
+    "GLD_2026_01_30_daily_move": "Tiingo shows a large GLD daily move around 2026-01-30. Recent StockAnalysis closes match Tiingo for 2026-03-20 to 2026-03-27; Jan 2026 should be further spot-checked before any daily-level GLD analysis. Main panel is weekly.",
+    "BAMLH0A0HYM2": "FRED current API exposes this HY OAS series only from 2023-06-02. Use BAA10Y for full-sample credit-spread state identification; keep BAMLH0A0HYM2 as post-2023 robustness/context."
+  }
+}

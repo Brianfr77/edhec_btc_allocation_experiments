@@ -1,0 +1,281 @@
+{
+  "series_summary": [
+    {
+      "series": "WALCL",
+      "rows": 430,
+      "non_null": 430,
+      "first": "2018-01-03",
+      "last": "2026-03-25"
+    },
+    {
+      "series": "WDTGAL",
+      "rows": 430,
+      "non_null": 430,
+      "first": "2018-01-03",
+      "last": "2026-03-25"
+    },
+    {
+      "series": "RRPONTSYD",
+      "rows": 2150,
+      "non_null": 2053,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "WRESBAL",
+      "rows": 430,
+      "non_null": 430,
+      "first": "2018-01-03",
+      "last": "2026-03-25"
+    },
+    {
+      "series": "DGS2",
+      "rows": 2150,
+      "non_null": 2058,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DGS10",
+      "rows": 2150,
+      "non_null": 2058,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DFII5",
+      "rows": 2150,
+      "non_null": 2058,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DFII10",
+      "rows": 2150,
+      "non_null": 2058,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "T5YIE",
+      "rows": 2150,
+      "non_null": 2058,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "T10YIE",
+      "rows": 2150,
+      "non_null": 2058,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "VIXCLS",
+      "rows": 2150,
+      "non_null": 2099,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "BAMLH0A0HYM2",
+      "rows": 747,
+      "non_null": 739,
+      "first": "2023-06-02",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "BAA10Y",
+      "rows": 2150,
+      "non_null": 2055,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "NFCI",
+      "rows": 430,
+      "non_null": 430,
+      "first": "2018-01-05",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "ANFCI",
+      "rows": 430,
+      "non_null": 430,
+      "first": "2018-01-05",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DTWEXBGS",
+      "rows": 2150,
+      "non_null": 2054,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "CPIAUCSL",
+      "rows": 99,
+      "non_null": 98,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "CPILFESL",
+      "rows": 99,
+      "non_null": 98,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "INDPRO",
+      "rows": 99,
+      "non_null": 99,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "UNRATE",
+      "rows": 99,
+      "non_null": 98,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "CFNAI",
+      "rows": 99,
+      "non_null": 99,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "USREC",
+      "rows": 99,
+      "non_null": 99,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    }
+  ],
+  "missing_files": [],
+  "raw_panel_shape": [
+    2190,
+    22
+  ],
+  "weekly_shape": [
+    430,
+    52
+  ],
+  "weekly_first": "2018-01-05",
+  "weekly_last": "2026-03-27",
+  "weekly_missing_counts": {
+    "WALCL": 0,
+    "WDTGAL": 0,
+    "RRPONTSYD": 0,
+    "WRESBAL": 0,
+    "DGS2": 0,
+    "DGS10": 0,
+    "DFII5": 0,
+    "DFII10": 0,
+    "T5YIE": 0,
+    "T10YIE": 0,
+    "VIXCLS": 0,
+    "BAMLH0A0HYM2": 282,
+    "BAA10Y": 0,
+    "NFCI": 0,
+    "ANFCI": 0,
+    "DTWEXBGS": 0,
+    "CPIAUCSL": 0,
+    "CPILFESL": 0,
+    "INDPRO": 0,
+    "UNRATE": 0,
+    "CFNAI": 0,
+    "USREC": 0,
+    "NET_LIQUIDITY": 0,
+    "YIELD_CURVE_10Y_2Y": 0,
+    "NOMINAL_MINUS_REAL_10Y_CHECK": 0,
+    "NET_LIQUIDITY_CHG_1W": 1,
+    "NET_LIQUIDITY_CHG_4W": 4,
+    "DGS2_CHG_1W": 1,
+    "DGS2_CHG_4W": 4,
+    "DGS10_CHG_1W": 1,
+    "DGS10_CHG_4W": 4,
+    "DFII10_CHG_1W": 1,
+    "DFII10_CHG_4W": 4,
+    "T10YIE_CHG_1W": 1,
+    "T10YIE_CHG_4W": 4,
+    "VIXCLS_CHG_1W": 1,
+    "VIXCLS_CHG_4W": 4,
+    "BAA10Y_CHG_1W": 1,
+    "BAA10Y_CHG_4W": 4,
+    "BAMLH0A0HYM2_CHG_1W": 283,
+    "BAMLH0A0HYM2_CHG_4W": 286,
+    "NFCI_CHG_1W": 1,
+    "NFCI_CHG_4W": 4,
+    "ANFCI_CHG_1W": 1,
+    "ANFCI_CHG_4W": 4,
+    "DTWEXBGS_CHG_1W": 1,
+    "DTWEXBGS_CHG_4W": 4,
+    "YIELD_CURVE_10Y_2Y_CHG_1W": 1,
+    "YIELD_CURVE_10Y_2Y_CHG_4W": 4,
+    "CPIAUCSL_YOY": 52,
+    "CPILFESL_YOY": 52,
+    "INDPRO_YOY": 52
+  },
+  "lagged_missing_counts": {
+    "WALCL": 1,
+    "WDTGAL": 1,
+    "RRPONTSYD": 1,
+    "WRESBAL": 1,
+    "DGS2": 1,
+    "DGS10": 1,
+    "DFII5": 1,
+    "DFII10": 1,
+    "T5YIE": 1,
+    "T10YIE": 1,
+    "VIXCLS": 1,
+    "BAMLH0A0HYM2": 283,
+    "BAA10Y": 1,
+    "NFCI": 1,
+    "ANFCI": 1,
+    "DTWEXBGS": 1,
+    "CPIAUCSL": 1,
+    "CPILFESL": 1,
+    "INDPRO": 1,
+    "UNRATE": 1,
+    "CFNAI": 1,
+    "USREC": 1,
+    "NET_LIQUIDITY": 1,
+    "YIELD_CURVE_10Y_2Y": 1,
+    "NOMINAL_MINUS_REAL_10Y_CHECK": 1,
+    "NET_LIQUIDITY_CHG_1W": 2,
+    "NET_LIQUIDITY_CHG_4W": 5,
+    "DGS2_CHG_1W": 2,
+    "DGS2_CHG_4W": 5,
+    "DGS10_CHG_1W": 2,
+    "DGS10_CHG_4W": 5,
+    "DFII10_CHG_1W": 2,
+    "DFII10_CHG_4W": 5,
+    "T10YIE_CHG_1W": 2,
+    "T10YIE_CHG_4W": 5,
+    "VIXCLS_CHG_1W": 2,
+    "VIXCLS_CHG_4W": 5,
+    "BAA10Y_CHG_1W": 2,
+    "BAA10Y_CHG_4W": 5,
+    "BAMLH0A0HYM2_CHG_1W": 284,
+    "BAMLH0A0HYM2_CHG_4W": 287,
+    "NFCI_CHG_1W": 2,
+    "NFCI_CHG_4W": 5,
+    "ANFCI_CHG_1W": 2,
+    "ANFCI_CHG_4W": 5,
+    "DTWEXBGS_CHG_1W": 2,
+    "DTWEXBGS_CHG_4W": 5,
+    "YIELD_CURVE_10Y_2Y_CHG_1W": 2,
+    "YIELD_CURVE_10Y_2Y_CHG_4W": 5,
+    "CPIAUCSL_YOY": 53,
+    "CPILFESL_YOY": 53,
+    "INDPRO_YOY": 53
+  },
+  "notes": {
+    "BAMLH0A0HYM2": "FRED current API begins 2023-06-02; BAA10Y added as full-sample credit spread proxy.",
+    "predictor_lag": "fred_macro_weekly_predictors_lag1.csv shifts all columns by one week to reduce look-ahead risk."
+  }
+}

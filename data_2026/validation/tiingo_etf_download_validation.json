@@ -1,0 +1,186 @@
+{
+  "summary": [
+    {
+      "ticker": "SPY",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 33,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "TLT",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 98,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "IEF",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 98,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "GLD",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 0,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "DBC",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 6,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "BIL",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 76,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "SHY",
+      "rows": 2070,
+      "first": "2018-01-02",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 98,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "IBIT",
+      "rows": 554,
+      "first": "2024-01-11",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 0,
+      "split_rows_non1": 0
+    },
+    {
+      "ticker": "FBTC",
+      "rows": 554,
+      "first": "2024-01-11",
+      "last": "2026-03-27",
+      "missing_adjClose": 0,
+      "nonpositive_adjClose": 0,
+      "duplicate_dates_after_drop": 0,
+      "dividend_rows": 0,
+      "split_rows_non1": 0
+    }
+  ],
+  "calendar_checks": [
+    {
+      "ticker": "TLT",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2018-01-02",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    },
+    {
+      "ticker": "IEF",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2018-01-02",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    },
+    {
+      "ticker": "GLD",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2018-01-02",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    },
+    {
+      "ticker": "DBC",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2018-01-02",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    },
+    {
+      "ticker": "BIL",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2018-01-02",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    },
+    {
+      "ticker": "SHY",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2018-01-02",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    },
+    {
+      "ticker": "IBIT",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2024-01-11",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    },
+    {
+      "ticker": "FBTC",
+      "reference": "SPY trading dates within overlap",
+      "overlap_start": "2024-01-11",
+      "overlap_end": "2026-03-27",
+      "missing_vs_spy": 0,
+      "missing_first10": [],
+      "extra_vs_spy": 0,
+      "extra_first10": []
+    }
+  ],
+  "errors": []
+}

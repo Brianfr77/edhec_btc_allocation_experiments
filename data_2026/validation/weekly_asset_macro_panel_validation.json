@@ -1,0 +1,50 @@
+{
+  "combined_shape": [
+    430,
+    126
+  ],
+  "combined_first": "2018-01-05",
+  "combined_last": "2026-03-27",
+  "asset_price_columns": [
+    "BTCUSDT",
+    "BTC_COINMETRICS_USD",
+    "BIL",
+    "DBC",
+    "FBTC",
+    "GLD",
+    "IBIT",
+    "IEF",
+    "SHY",
+    "SPY",
+    "TLT"
+  ],
+  "main_complete_rows_after_lag_and_returns": 429,
+  "main_complete_first": "2018-01-12",
+  "main_complete_last": "2026-03-27",
+  "missing_counts_selected": {
+    "RET_BTCUSDT": 1,
+    "RET_SPY": 1,
+    "RET_TLT": 1,
+    "RET_IEF": 1,
+    "RET_GLD": 1,
+    "RET_DBC": 1,
+    "RET_BIL": 1,
+    "MACRO_LAG1_NET_LIQUIDITY": 1,
+    "MACRO_LAG1_DFII10": 1,
+    "MACRO_LAG1_T10YIE": 1,
+    "MACRO_LAG1_VIXCLS": 1,
+    "MACRO_LAG1_BAA10Y": 1,
+    "MACRO_LAG1_NFCI": 1,
+    "MACRO_LAG1_ANFCI": 1,
+    "MACRO_LAG1_DTWEXBGS": 1,
+    "MACRO_LAG1_YIELD_CURVE_10Y_2Y": 1
+  },
+  "ibt_fbtc_expected_missing": {
+    "PX_IBIT": 314,
+    "PX_FBTC": 314,
+    "RET_IBIT": 315,
+    "RET_FBTC": 315
+  },
+  "baml_missing": 282,
+  "baa10y_missing": 0
+}

@@ -1,0 +1,146 @@
+{
+  "summary": [
+    {
+      "series": "WALCL",
+      "rows": 430,
+      "non_null": 430,
+      "missing": 0,
+      "first": "2018-01-03",
+      "last": "2026-03-25"
+    },
+    {
+      "series": "WDTGAL",
+      "rows": 430,
+      "non_null": 430,
+      "missing": 0,
+      "first": "2018-01-03",
+      "last": "2026-03-25"
+    },
+    {
+      "series": "RRPONTSYD",
+      "rows": 2150,
+      "non_null": 2053,
+      "missing": 97,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "WRESBAL",
+      "rows": 430,
+      "non_null": 430,
+      "missing": 0,
+      "first": "2018-01-03",
+      "last": "2026-03-25"
+    },
+    {
+      "series": "DGS2",
+      "rows": 2150,
+      "non_null": 2058,
+      "missing": 92,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DGS10",
+      "rows": 2150,
+      "non_null": 2058,
+      "missing": 92,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DFII5",
+      "rows": 2150,
+      "non_null": 2058,
+      "missing": 92,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DFII10",
+      "rows": 2150,
+      "non_null": 2058,
+      "missing": 92,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "VIXCLS",
+      "rows": 2150,
+      "non_null": 2099,
+      "missing": 51,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "BAMLH0A0HYM2",
+      "rows": 747,
+      "non_null": 739,
+      "missing": 8,
+      "first": "2023-06-02",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "DTWEXBGS",
+      "rows": 2150,
+      "non_null": 2054,
+      "missing": 96,
+      "first": "2018-01-01",
+      "last": "2026-03-27"
+    },
+    {
+      "series": "CPIAUCSL",
+      "rows": 99,
+      "non_null": 98,
+      "missing": 1,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "UNRATE",
+      "rows": 99,
+      "non_null": 98,
+      "missing": 1,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    },
+    {
+      "series": "CFNAI",
+      "rows": 99,
+      "non_null": 99,
+      "missing": 0,
+      "first": "2018-01-01",
+      "last": "2026-03-01"
+    }
+  ],
+  "errors": [
+    {
+      "series": "T5YIE",
+      "error": "HTTP 429: {\"error_code\":429,\"error_message\":\"Too Many Requests.  Exceeded Rate Limit\"}"
+    },
+    {
+      "series": "T10YIE",
+      "error": "HTTP 429: {\"error_code\":429,\"error_message\":\"Too Many Requests.  Exceeded Rate Limit\"}"
+    },
+    {
+      "series": "NFCI",
+      "error": "HTTP 429: {\"error_code\":429,\"error_message\":\"Too Many Requests.  Exceeded Rate Limit\"}"
+    },
+    {
+      "series": "ANFCI",
+      "error": "HTTP 429: {\"error_code\":429,\"error_message\":\"Too Many Requests.  Exceeded Rate Limit\"}"
+    },
+    {
+      "series": "CPILFESL",
+      "error": "HTTP 429: {\"error_code\":429,\"error_message\":\"Too Many Requests.  Exceeded Rate Limit\"}"
+    },
+    {
+      "series": "INDPRO",
+      "error": "HTTP 429: {\"error_code\":429,\"error_message\":\"Too Many Requests.  Exceeded Rate Limit\"}"
+    },
+    {
+      "series": "USREC",
+      "error": "HTTP 429: {\"error_code\":429,\"error_message\":\"Too Many Requests.  Exceeded Rate Limit\"}"
+    }
+  ]
+}

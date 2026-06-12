@@ -808,7 +808,7 @@ def write_explainability_artifacts(
             },
             {
                 "choice": "Fixed BTC weights of 0%, 1%, 2%, 3%, and 5%",
-                "rationale": "Tests BTC risk-budget impact at small satellite allocations without optimizing on realized BTC returns.",
+                "rationale": "Tests BTC risk-budget impact at small allocation levels without optimizing on realized BTC returns.",
                 "implication": "No BTC weight is selected as optimal in Part 2.",
             },
             {
@@ -818,7 +818,7 @@ def write_explainability_artifacts(
             },
             {
                 "choice": "BIL excluded from Part 2 main portfolios",
-                "rationale": "Part 2 focuses on risky All Weather/ERC base assets and BTC satellite risk contribution.",
+                "rationale": "Part 2 focuses on risky All Weather/ERC base assets and BTC risk contribution.",
                 "implication": "Cash parking and BIL robustness are deferred to later conditional allocation work.",
             },
         ],

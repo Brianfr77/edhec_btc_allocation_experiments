@@ -2,7 +2,7 @@
 """Part 10 experiment runner: matched benchmarks and BTC risk-cap sensitivity.
 
 This runner extends the frozen Part 1-9 evidence chain without overwriting it.
-It compares the existing HMM-conditioned BTC satellite rule against simpler
+It compares the existing HMM-conditioned BTC allocation rule against simpler
 matched-exposure and cap-only alternatives.
 """
 

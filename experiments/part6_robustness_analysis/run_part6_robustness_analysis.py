@@ -1382,7 +1382,7 @@ def build_manifest(
     manifest = {
         "created_at": datetime.utcnow().isoformat() + "Z",
         "run_id": run_id,
-        "objective": "Full robustness analysis for conditional BTC risk-budgeted satellite diagnostics",
+        "objective": "Full robustness analysis for conditional BTC risk-budgeted allocation diagnostics",
         "input_dir": str(args.input_dir),
         "part1_run_dir": str(args.part1_run_dir),
         "part2_run_dir": str(args.part2_run_dir),

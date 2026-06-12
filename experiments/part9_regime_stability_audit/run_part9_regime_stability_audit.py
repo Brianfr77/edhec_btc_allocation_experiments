@@ -629,7 +629,7 @@ def build_decision_matrix(
             "diagnostic": "max_absolute_btc_weight_delta_vs_part1_hard_label",
             "status": "pass" if max_weight_delta <= 0.03 else "caution",
             "key_value": max_weight_delta,
-            "note": "State drift affects BTC signal timing, but the small satellite grid keeps absolute BTC weight changes bounded.",
+            "note": "State drift affects BTC signal timing, but the small allocation grid keeps absolute BTC weight changes bounded.",
         },
         {
             "evidence_area": "risk_overlay_dependency",

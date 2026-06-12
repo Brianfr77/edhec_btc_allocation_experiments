@@ -965,7 +965,7 @@ def write_explainability_artifacts(
     methodology = """# Part 5 Methodology Audit
 
 ## Purpose
-Part 5 evaluates whether the Part 4 conditional BTC satellite rules remain operationally interpretable under scheduled rebalancing, turnover, transaction costs, and BIL cash parking conventions. It is not a live trading strategy and does not write a final thesis conclusion.
+Part 5 evaluates whether the Part 4 conditional BTC allocation rules remain operationally interpretable under scheduled rebalancing, turnover, transaction costs, and BIL cash parking conventions. It is not a live trading strategy and does not write a final thesis conclusion.
 
 ## Inputs
 - Cleaned weekly asset returns from `data_2026/cleaned`.
@@ -980,7 +980,7 @@ The main specification uses `lagged_one_week`: the prior weekly HMM state is use
 Monthly and quarterly schedules use the final available Friday in each calendar month or quarter. The first eligible sample week is a formation event. Initial setup cost is estimated but not deducted from net returns. Subsequent scheduled rebalance costs are deducted from weekly net returns using one-way turnover by asset.
 
 ## Funding Conventions
-`pro_rata_base` returns unused BTC allocation to the non-BTC base portfolio. `bil_sleeve` keeps a fixed BTC satellite sleeve and places unused sleeve capital in BIL.
+`pro_rata_base` returns unused BTC allocation to the non-BTC base portfolio. `bil_sleeve` keeps a fixed BTC allocation budget and places unused allocation in BIL.
 
 ## Boundaries
 - No HMM re-estimation.

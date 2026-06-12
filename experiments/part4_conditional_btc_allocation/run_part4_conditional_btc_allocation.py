@@ -84,7 +84,7 @@ REQUIRED_FIGURES = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Run conditional BTC allocation and risk-budget satellite diagnostics."
+        description="Run conditional BTC allocation and risk-budget allocation diagnostics."
     )
     parser.add_argument("--input-dir", default="data_2026/cleaned", type=Path)
     parser.add_argument(
@@ -969,7 +969,7 @@ def write_explainability_artifacts(
     audit_md = f"""# Part 4 Methodology Audit
 
 ## Purpose
-Part 4 evaluates conditional BTC allocation rules as risk-budgeted satellite diagnostics. It does not estimate a trading strategy, transaction costs, turnover, real-time state signal, or final thesis conclusion.
+Part 4 evaluates conditional BTC allocation rules as risk-budgeted allocation diagnostics. It does not estimate a trading strategy, transaction costs, turnover, real-time state signal, or final thesis conclusion.
 
 ## Inputs
 - Cleaned weekly asset returns from `data_2026/cleaned`.
@@ -1195,7 +1195,7 @@ def write_manifest(
     manifest = {
         "created_at": datetime.utcnow().isoformat() + "Z",
         "run_id": dirs["root"].name,
-        "objective": "Conditional BTC allocation rule and risk-budgeted satellite diagnostics",
+        "objective": "Conditional BTC allocation rule and risk-budgeted allocation diagnostics",
         "input_dir": str(args.input_dir),
         "part1_run_dir": str(args.part1_run_dir),
         "part2_run_dir": str(args.part2_run_dir),

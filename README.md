@@ -6,7 +6,7 @@ This repository contains the experiment data, code, notebooks, and compressed re
 
 - `data_2026/`: input datasets and validation files.
 - `experiments/`: Python experiment scripts and per-part dependency files.
-- `notebooks/`: Colab-oriented notebooks for the nine experiment parts.
+- `notebooks/`: Colab-oriented notebooks for the fourteen experiment parts.
 - `outputs/*_outputs.zip`: compressed result bundles for each experiment part.
 
 The unpacked local output folders are intentionally excluded from Git to avoid duplicating the compressed result bundles.
@@ -22,6 +22,11 @@ The unpacked local output folders are intentionally excluded from Git to avoid d
 7. `part7_realtime_probabilistic_regime_robustness`
 8. `part8_uncertainty_quantification`
 9. `part9_regime_stability_audit`
+10. `part10_benchmark_cap_sensitivity`
+11. `part11_hmm_model_comparison`
+12. `part12_stress_composite_sensitivity`
+13. `part13_transaction_cost_sensitivity`
+14. `part14_pairwise_inference`
 
 ## Setup
 
@@ -60,8 +65,15 @@ The compressed outputs are stored in `outputs/`:
 - `part7_realtime_probabilistic_regime_robustness_outputs.zip`
 - `part8_uncertainty_quantification_outputs.zip`
 - `part9_regime_stability_audit_outputs.zip`
+- `part10_benchmark_cap_sensitivity_outputs.zip`
+- `part11_hmm_model_comparison_outputs.zip`
+- `part12_stress_composite_sensitivity_outputs.zip`
+- `part13_transaction_cost_sensitivity_outputs.zip`
+- `part14_pairwise_inference_outputs.zip`
 
 Unzip the relevant result bundle to inspect generated tables, figures, logs, and serialized outputs.
+
+Parts 10--14 add the final validation layer used in the paper: benchmark and risk-cap sensitivity, HMM model comparison, stress-composite sensitivity, transaction-cost sensitivity, and pairwise bootstrap inference.
 
 ## Notes
 

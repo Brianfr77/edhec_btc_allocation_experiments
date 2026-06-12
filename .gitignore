@@ -19,6 +19,7 @@ Thumbs.db
 literature/
 paper/
 reports/
+模板/
 
 # Outputs: keep only the compressed reproducibility bundles
 outputs/*
